@@ -1,0 +1,27 @@
+{
+  "name": "tech-task-140007",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.9.3",
+    "@emotion/styled": "^11.9.3",
+    "@material-ui/core": "^4.12.4",
+    "@mui/icons-material": "^5.8.4",
+    "@mui/material": "^5.8.4",
+    "axios": "^0.27.2",
+    "next": "11.1.2",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
+  },
+  "devDependencies": {
+    "eslint": "8.0.1",
+    "eslint-config-next": "11.1.2",
+    "sass": "^1.52.3"
+  }
+}

@@ -1,0 +1,10 @@
+.formPaper {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  width: 100%;
+  max-width: 33rem;
+  button {
+    margin-bottom: 1rem;
+  }
+}
