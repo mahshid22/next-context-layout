@@ -8,7 +8,6 @@ const SubmitButton = (props) => {
   const formContext = useContext(FormContext);
   const { form, loading } = formContext;
   const { result } = useContext(ResultContext);
-
   return (
     <Button
       variant="contained"

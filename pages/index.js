@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div className={styles.content}>
       <h1 className={styles.title}>
-        Technical Task with <a href="https://nextjs.org">Next.js!</a>
+        Task with <a href="https://nextjs.org">Next.js!</a>
       </h1>
 
       <div className={styles.grid}>

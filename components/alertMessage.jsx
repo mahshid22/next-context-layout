@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import React, { useContext } from "react";
 import Box from "@mui/material/Box";
 import Alert from "@mui/material/Alert";
 import IconButton from "@mui/material/IconButton";
@@ -6,7 +6,7 @@ import Collapse from "@mui/material/Collapse";
 import CloseIcon from "@mui/icons-material/Close";
 import { AlertContext } from "@/context/alertCotex";
 
-export default function TransitionAlerts() {
+const TransitionAlerts = React.memo(function WrapedComponent() {
   const { showSubmitResult, setShowSubmitResult, alertMsgtype, alertMsg } =
     useContext(AlertContext);
   if (showSubmitResult)
@@ -35,4 +35,5 @@ export default function TransitionAlerts() {
       </Box>
     );
   else return null;
-}
+});
+export default TransitionAlerts;

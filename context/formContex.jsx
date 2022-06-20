@@ -8,6 +8,7 @@ const initialState = {
 const FormContext = createContext({
   form: initialState,
 });
+
 const FormProvider = ({ children }) => {
   const [form, setForm] = useState(initialState);
   const [loading, setLoading] = useState(false);
