@@ -1,17 +1,17 @@
-import Box from "@mui/material/Box";
+import { useContext } from "react";
+import axios from "axios";
 import Layout from "@/components/layout";
+import Box from "@mui/material/Box";
 import PostFrom from "@/components/postFrom";
 import SubmitButton from "@/components/submitButton";
 import InputText from "@/components/inputText";
 import Alert from "@/components/alertMessage";
-import styles from "../../styles/PostForm.module.scss";
+import PageHead from "@/components/Head";
 import removeEmpty from "utils/removeEmptyFromObject";
-import { useContext } from "react";
-import axios from "axios";
 import { FormContext } from "@/context/formContex";
 import { AlertContext } from "@/context/alertCotex";
 import { ResultContext } from "@/context/resultContext";
-import PageHead from "@/components/Head";
+import styles from "../../styles/PostForm.module.scss";
 
 export default function NewPost() {
   const formContext = useContext(FormContext);

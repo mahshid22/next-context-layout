@@ -2,10 +2,11 @@ import { useContext } from "react";
 import Button from "@mui/material/Button";
 import { FormContext } from "@/context/formContex";
 import { ResultContext } from "@/context/resultContext";
+
 const SubmitButton = (props) => {
   const { handleSubmit } = props;
   const formContext = useContext(FormContext);
-  const { form, loading, setLoading } = formContext;
+  const { form, loading } = formContext;
   const { result } = useContext(ResultContext);
 
   return (
